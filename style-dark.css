@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    transition: color 100ms;
+    transition: background-color 1000ms;
 }
 
 html,
@@ -13,6 +15,7 @@ body {
     /* font-family: "Inter", sans-serif; */
     font-family: "Source Sans Pro", sans-serif;
     --background-color: rgb(39, 37, 37);
+    background-color: var(--background-color);
 }
 
 .head {
@@ -87,7 +90,6 @@ body {
     color: white;
     margin: 0 auto;
     padding: 1em;
-    /* margin: 1em; */
     border-radius: 5px;
     box-shadow: 0 0 50px rgb(65, 63, 63);
 }
@@ -127,7 +129,7 @@ body {
 
 .login-btn {
     width: 100%;
-    background-color: dodgerblue;
+    background-color: #F9A826;
     padding: 0.5em;
     font-size: 0.8em;
     color: white;
@@ -137,12 +139,12 @@ body {
 }
 .login-btn:hover {
     cursor: pointer;
-    background-color: rgb(28, 116, 204);
+    background-color: #E09722;
     transition: background-color 200ms linear;
     
 }
 .login-btn:active {
-    box-shadow: 0 0 10px dodgerblue;
+    box-shadow: 0 0 10px #F9A826;
 }
 
 /* dark-mode specific */
