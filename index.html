@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet"> 
+
+    <script src="https://kit.fontawesome.com/b55e9fd794.js" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="styles-dark.css"> -->
+</head>
+<body>
+    <link rel="stylesheet" href="style.css" id="theme">
+    <div class="head">
+        <div class="dark-mode">
+            <label for="toggle" class="toggle-label">Dark Mode</label>
+            <div class="toggle">
+                <div class="toggle-btn" name="toggle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <from class="login-form">
+
+                <div class="header">
+                    <h2>Sign In to Colorlib</h2>
+                    <p class="small sub-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorem id minima!</p>
+                </div>
+                
+                <input type="text" name="username" class="form-input" placeholder="Username" />
+                <input type="password" name="password" class="form-input" placeholder="Password" />
+
+                <div class="extra">
+                    <div class="save-login">
+                        <input type="checkbox" name="save_login" id="save_login" class="save-login-checkbox" checked>
+                        <label for="save_login" class="save-login-label">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password</a>
+                </div>
+
+                <div class="form-section">
+                    <button type="button" class="login-btn">Log In</button>
+                </div>
+                <div class="signin-options small">Or signin with</div>
+                <div class="signin-options">
+                    <i class="fa fa-facebook signin-option-btn"></i>
+                    <i class="fa fa-twitter signin-option-btn"></i>
+                    <i class="fa fa-google signin-option-btn"></i>
+                </div>
+            </from>
+        </div>
+
+        <div class="section">
+            <img src="res/undraw_progressive.svg" class="signin-img" alt="login image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

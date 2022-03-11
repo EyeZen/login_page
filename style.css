@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    /* font-family: "Inter", sans-serif; */
+    font-family: "Source Sans Pro", sans-serif;
+    --background-color: white;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    color: black;
+    user-select: none;
+    padding: 0.5em 0;
+}
+.toggle {
+    --toggle-dim: 10px;
+    margin: calc(var(--toggle-dim) / 2);
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(1.8 * var(--toggle-dim));
+    height: var(--toggle-dim);
+    border-radius: 20px;
+    position: relative;
+}
+.toggle-btn {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: var(--toggle-dim);
+    height: var(--toggle-dim);
+    position: absolute;
+    left: 0;
+    transition: left 100ms;
+    user-select: none;
+}
+.dark-mode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* container */
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    padding-top: 10%;
+    background-color: var(--background-color);
+}
+
+.header {
+    font-size: 1em;
+    margin-bottom: 1rem;
+}
+.header > h2 {
+    margin-bottom: 0.5rem;
+}
+.sub-header {
+    color: var(--color-tertiary);
+}
+.small {
+    font-size: 1rem;
+}
+
+.login-form {
+    display: flex;
+    height: 80%;
+    width: 60%;
+    font-size: 1.5rem;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin: 0 auto;
+    padding: 1em;
+    /* margin: 1em; */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(231, 229, 229);
+}
+
+.form-input {
+    border: 0;
+    border-bottom: 1px solid black;
+    border-bottom-color: gray;
+    color: black;
+    padding: 0.2em 0;
+    margin-bottom: 1em;
+    /* border-radius: 10px;
+    padding-left: 1em; */
+    font-size: 0.8em;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2em;
+    color: gray;
+}
+
+.save-login-label {
+    font-size: 0.8rem;
+}
+
+.forgot-password {
+    font-size: 0.8rem;
+    font-style: underline;
+    color: gray;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: dodgerblue;
+    padding: 0.5em;
+    font-size: 0.8em;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    transition: background-color 200ms linear;
+}
+.login-btn:hover {
+    cursor: pointer;
+    background-color: rgb(28, 116, 204);
+    transition: background-color 200ms linear;
+
+}
+.login-btn:active {
+    box-shadow: 0 0 10px dodgerblue;
+}
+
+.signin-options {
+    padding-top: 1em;
+}
+.signin-option-btn {
+    width: 1em;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.signin-option-btn:hover {
+    box-shadow: 0 0 10px black;
+}
+.fa-facebook {background-color: rgb(59, 96, 209);}
+.fa-twitter {background-color: dodgerblue;}
+.fa-google {background-color: orangered;}
+
+.signin-img {
+    width: 100%;
+}
+
+
+/* Mobile Phone Theme */
+@media screen and (max-width: 728px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .section {
+        display: flex;
+        justify-content: center;
+    }
+    .login-form {
+        box-shadow: 0 0 var(--background-color);
+        width: 80%;
+    }
+    .signin-img {
+        width: 80%;
+    }
+}
